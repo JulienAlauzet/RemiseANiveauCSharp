@@ -23,5 +23,16 @@
             Assert.Equal(0m, v.Prix);
         }
 
+        [Fact]
+        public void AppliquerRemise_DeCentPourcent_DoitRendreLePrixNul()
+        {
+            
+            var v = new Vehicule("Gratuite", 100m);
+            
+            v.AppliquerRemise(100);
+            
+            Assert.Equal(0m, v.Prix);
+        }
+
     }
 }

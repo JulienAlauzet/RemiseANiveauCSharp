@@ -6,10 +6,12 @@ namespace RemiseANiveauCSharp
 {
     public static class ExtensionVendable
     {
-        // Le 'this' devant le premier paramètre est la clé de la méthode d'extension
         public static void AppliquerRemise(this IVendable item, int pourcentage)
         {
-            item.Prix -= item.Prix * pourcentage / 100m; // Note le 'm' pour decimal
+            if (pourcentage < 0 || pourcentage > 100)
+                throw new ArgumentOutOfRangeException(nameof(pourcentage), "Le pourcentage doit être entre 0 et 100.");
+
+            item.Prix -= item.Prix * pourcentage / 100m;
         }
     }
 }

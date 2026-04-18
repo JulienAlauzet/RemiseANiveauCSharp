@@ -9,7 +9,6 @@ namespace RemiseANiveauCSharp
         public static async Task Main()
         {
 
-            // Force la console à interpréter les caractères spéciaux (comme €)
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
             Console.WriteLine("Hello World\n");
@@ -51,7 +50,14 @@ namespace RemiseANiveauCSharp
             #region Interface et Extension
 
             Vehicule voiture2 = vehicules[1];
-            voiture2.AppliquerRemise(10);
+
+            try
+            {
+                voiture2.AppliquerRemise(10);
+            } catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine($"Erreur lors de l'application de la remise : {ex.Message}");
+            }
 
             Console.WriteLine($"{voiture2.Nom} coûte {voiture2.Prix}€");
 
