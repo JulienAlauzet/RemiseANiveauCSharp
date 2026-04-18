@@ -15,11 +15,11 @@
         [Fact]
         public void AppliquerRemise_PrixInitialZero_ResteZero()
         {
-            // Arrange
+           
             var v = new Vehicule("Gratuit", 0m);
-            // Act
+            
             v.AppliquerRemise(10);
-            // Assert
+            
             Assert.Equal(0m, v.Prix);
         }
 
