@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="RemiseANiveauCSharp/RemiseANiveauCSharp.csproj" />
+  <Project Path="RemiseANiveauCSharp.Tests/RemiseANiveauCSharp.Tests.csproj" Id="9e5ade60-0d95-444f-8c59-0ae4f871f46c" />
+</Solution>
