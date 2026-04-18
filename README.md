@@ -7,8 +7,8 @@ L'objectif de ce projet est de démontrer ma capacité à concevoir une architec
 ## Architecture de la Solution
 
 La solution est structurée selon les standards de l'industrie pour assurer le découplage et la testabilité :
-- **Prepa_ExamSII** : Projet principal (Application Console) contenant le code métier, les modèles de données et la logique d'asynchronisme.
-- **Prepa_ExamSII.Tests** : Projet de tests unitaires utilisant xUnit, référençant le projet principal.
+- **RemiseANiveauCSharp** : Projet principal (Application Console) contenant le code métier, les modèles de données et la logique d'asynchronisme.
+- **RemiseANiveauCSharp.Tests** : Projet de tests unitaires utilisant xUnit, référençant le projet principal.
 
 ## Compétences Démontrées
 
